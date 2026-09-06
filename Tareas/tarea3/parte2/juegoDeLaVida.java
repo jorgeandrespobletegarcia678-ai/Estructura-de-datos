@@ -61,17 +61,15 @@ public class juegoDeLaVida{
         }
         tableroActual = tableroSiguiente;
     }
-   // Método mejorado para imprimir el estado actual con símbolos visuales
 public void mostrarJuego() {
-    // Imprimimos un borde superior para encuadrar el tablero
+   
     System.out.println("┌" + "──".repeat(tamaño) + "┐");
 
     for (int f = 0; f < tamaño; f++) {
-        System.out.print("│"); // Borde izquierdo
+        System.out.print("│");
         for (int c = 0; c < tamaño; c++) {
             Integer estado = (Integer) tableroActual.obtenerElemento(f, c);
-            
-            // Si la celda está viva (1), pintamos un cuadro; si está muerta (0), un espacio
+    
             if (estado != null && estado == 1) {
                 System.out.print("■ ");
             } else {
