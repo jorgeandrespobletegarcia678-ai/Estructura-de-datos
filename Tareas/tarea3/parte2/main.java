@@ -5,7 +5,7 @@ public class main{
     public static void main(String[] args) throws Exception {
         System.setOut(new java.io.PrintStream(System.out,true,"UTF-8"));
         Array2D<Integer> array = new Array2D<>(10);
-        String rutaArchivo= "parte2/poblacion.csv";
+        String rutaArchivo= "Tarea3/parte2/poblacion.csv";
         try (BufferedReader br = new BufferedReader(new FileReader(rutaArchivo))) {
             String linea;
             int fila = 0;
